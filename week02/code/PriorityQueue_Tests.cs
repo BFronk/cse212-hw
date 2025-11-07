@@ -17,7 +17,8 @@ public class PriorityQueueTests
 
     [TestMethod]
     // Scenario: 
-    // Expected Result: 
+    // Eok
+    // expected Result: 
     // Defect(s) Found: 
     public void TestPriorityQueue_2()
     {

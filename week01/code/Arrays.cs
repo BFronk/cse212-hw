@@ -13,7 +13,17 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        //we need to do multiplicattion on the first int and iterate through the number if 
+        // times specififed
+        double[] array;
+        var numbers = new double[length];
+        for (int i = 1; i <= length; i++)
+        {
+            var currentfactor = i * number;
+            numbers[i - 1] = currentfactor;
+            //add each new factor to the list and have the foor loop run for the amount specified
+        }
+        return numbers;
     }
 
     /// <summary>
@@ -29,5 +39,13 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+        //count number of items and start at that number
+        int index = data.Count - amount;
+        //produce an array starting at that number
+        List<int> RangeOne = data.GetRange(index, amount);
+        //remove the old range
+        data.RemoveRange(index, amount);
+        //append the new range
+        data.InsertRange(0, RangeOne);
     }
 }
